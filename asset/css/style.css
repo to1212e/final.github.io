@@ -1,0 +1,215 @@
+:root {
+   --bg1: #0d0d0c;
+   --bg2: #FF0000;
+   --bg3: #F8F8F8;
+   --body: #000000;
+   --white: #FFFFFF;
+   --p: #FF0000;
+ }
+ 
+ body {
+     background-color: var(--bg1);
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ section {
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+ 
+ #banner {
+     background: url('https://img.freepik.com/free-photo/photo-frame-shopping-trolleys-packets-labels_23-2147961858.jpg?w=996&t=st=1710736171~exp=1710736771~hmac=88feb71a74598af11985bcbbb88c3d1a09c161c7b1faa66540927182235881dd');
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .navbar {
+     background: linear-gradient(to bottom, hsla(0, 0%, 2%, 0.829), rgba(247, 243, 243, 0.884));
+ }
+ 
+ 
+ .nav-link{
+   color: #000000 !important;  
+ }
+ .navbar .nav-link:hover{
+     color: var(--bg3) !important;
+ }
+ 
+ .btn {
+     padding: 15px 30px;
+     transition: all 0.4s ease;
+     font-weight: 800;
+     border-radius: 0;
+ }
+ 
+ .btn-brand {
+     background-color: var(--bg3);
+ }
+ 
+ .btn-brand:hover {
+     background-color: transparent;
+     color: var(--bg3);
+     border-color: var(--bg2);
+  }
+ 
+  #services{
+     background: var(--bg3);
+  }
+  #about{
+     background: var(--bg1);
+  }
+ 
+  #cta{
+     background-image: url('https://img.freepik.com/free-photo/photo-frame-shopping-trolleys-packets-labels_23-2147961858.jpg?w=996&t=st=1710736171~exp=1710736771~hmac=88feb71a74598af11985bcbbb88c3d1a09c161c7b1faa66540927182235881dd');
+     position: relative;
+     opacity: 0.90;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     min-height: 70vh;
+  }
+ 
+  .icon-box-img{
+     width: 40%;
+     margin: auto;
+  }
+ 
+  .btn-outline-brand {
+   background-color: var(--bg1);
+   color: var(--white);
+   border-color: var(--white);
+ }
+ 
+ .btn-outline-brand:hover {
+   background-color: var(--white);
+   color: var(--bg1) !important;
+ }
+ 
+  .card {
+     transition: background-color 0.3s, color 0.3s;
+  }
+ 
+  .p-3{
+     background-color: rgb(244, 241, 241);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .card:hover {
+     background-color: rgb(12, 12, 12);
+  }
+ 
+  .card:hover .card-title,
+  .card:hover .card-text,
+  .card:hover .btn {
+  
+     color:rgb(246, 250, 246);
+  }
+  .card:hover .btn{
+    border: 2px solid var(--bg2);
+  }
+  .testimonials {
+     background-color: var(--bg3);
+     padding: 30px;
+ border: 2px solid var(--p);
+  }
+  .testimonials img{
+     width: 65px;
+     border-radius: 100px;
+     height: 65px;
+       }
+ 
+  #reviews a {
+    color: var(--white);
+ }
+ 
+ .faq-section {
+    max-width: 800px;
+    margin: auto;
+ }
+ 
+ .accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0;
+ }
+ 
+ #faq {
+    background-color: var(--white);
+ }
+ .accordion{
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ .accordion-button{
+   border-color: var(--p);
+    background-color: #fffcfc;
+    border: none;
+    border-bottom: 1px solid #fffcfc;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .accordion-body {
+    border-left: 3px solid var(--bg2);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+ }
+ 
+ .faq-answer p {
+    margin-bottom: 0;
+ }
+ 
+ .accordion-button:focus{
+    box-shadow: none;
+ }
+ 
+ .accordion-button:not(.collapsed) {
+    color: var(--bg1);
+ }
+ /* hover effect for FAQ queston  */
+ .accordion-button:hover {
+    background-color: var(--body);
+    color: var(--white);
+ }
+ 
+ /* adjust accordion icon*/
+ .accordion-button::after {
+    font-family: "font awesome 5 free";
+    content: ""; /* plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+ }
+ 
+ .accordion-button[aria-expanded="true"]::after {
+    content: ""; /* minus icon*/
+ }
+#footer{
+   padding: 50px;
+}
+ .navbar-brands img{
+   margin-top: 5px !important;
+   width: 65px !important;
+   border-radius: 100px !important;
+   height: 65px !important;
+ }
+ @media screen and (max-width:767px){
+ 
+    section{
+       padding: 60px 20px;
+    }
+    .card{
+       margin-bottom: 20px;
+    }
+ }
+ .list-unstyled a {
+   color: #F8F8F8;
+ }
